@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jesús Gaitán - Freelance Data Scientist</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#about" data-translate="about">About</a></li>
+                <li><a href="#skills" data-translate="skills">Skills</a></li>
+                <li><a href="#projects" data-translate="projects">Projects</a></li>
+                <li><a href="#contact" data-translate="contact">Contact</a></li>
+                <li><button id="langToggle">EN/ES</button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="title">
+            <h1>Jesús A Gaitán</h1>
+            <p data-translate="tagline"></p>
+        </section>
+
+        <section id="about">
+            <h2 data-translate="about"></h2>
+            <p data-translate="aboutMe"></p>
+        </section>
+
+        <section id="skills">
+            <h2 data-translate="skills"></h2>
+            <ul>
+                <li data-translate="skill1"></li>
+                <li data-translate="skill2"></li>
+                <li data-translate="skill3"></li>
+            </ul>
+        </section>
+
+        <section id="projects">
+            <h2 data-translate="projects"></h2>
+            <div class="project">
+                <h3 data-translate="project1Title"></h3>
+                <p data-translate="project1Desc"></p>
+                <a href="#" data-translate="viewProject"></a>
+            </div>
+            <div class="project">
+                <h3 data-translate="project2Title"></h3>
+                <p data-translate="project2Desc"></p>
+                <a href="#" data-translate="viewProject"></a>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2 data-translate="contact">Contact</h2>
+            <form>
+                <label for="name" data-translate="nameLabel">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email" data-translate="emailLabel">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message" data-translate="messageLabel">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <button type="submit" data-translate="sendButton">Send</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Jesus A Gaitan. <span data-translate="rightsReserved"></span></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -6,13 +6,41 @@
 
 body {
     font-family: Arial, sans-serif;
-    line-height: 1.6;
+    line-height: 1.5;
     color: #333;
+    text-align: justify;
+    background-color: #defffd;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+a{
+    color: #083d77;
+    text-decoration: none;
+}
+
+a:hover{
+    color: #2e294e;
+}
+
+a:visited{
+    color: #0466c8;
 }
 
 header {
-    background-color: #f4f4f4;
-    padding: 1rem;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-weight: bold;
+}
+
+nav {
+    width: 90%;
+    background-color: #22577a;
+    margin: 0 auto;
+    padding: 1vh 0;
 }
 
 nav ul {
@@ -23,40 +51,74 @@ nav ul {
 
 nav ul li a {
     text-decoration: none;
-    color: #333;
+    color: #fff;
+}
+
+nav ul li a:visited{
+    color: #fff;
+}
+
+#langToggle{
+    margin-left: auto;
+    padding: 1.6vh;
 }
 
 main {
+    width: 100%;
     padding: 2rem;
+    flex: 1;
+
+}
+
+#title {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+#nametag {
+    line-height: 1.2;
+    margin-bottom: 0.5rem;
+}
+
+h1 {
+    font-size: 2.5em;
+}
+
+#tagline {
+    font-weight: lighter;
+    font-style: italic;
+    font-size: 0.9em;
+}
+
+#personal-links {
+    margin: auto 0;
 }
 
 section {
     margin-bottom: 2rem;
 }
 
-h1, h2 {
-    margin-bottom: 1rem;
+h2 {
+    text-align: center;
+}
+
+#skills ul, #journey ul{
+    margin-left: 1rem;
 }
 
 .project {
     background-color: #f4f4f4;
     padding: 1rem;
     margin-bottom: 1rem;
-}
-
-form {
-    display: flex;
-    flex-direction: column;
-}
-
-input, textarea {
-    margin-bottom: 1rem;
-    padding: 0.5rem;
+    text-align: center;
 }
 
 button {
-    background-color: #333;
+    background-color: #222;
     color: #fff;
+    font-weight: bold;
     padding: 0.5rem 1rem;
     border: none;
     cursor: pointer;
@@ -64,6 +126,11 @@ button {
 
 button:hover {
     background-color: #555;
+}
+
+#roadmap {
+    width: 100%;
+    margin: 1rem auto;
 }
 
 footer {
@@ -74,4 +141,41 @@ footer {
     position: relative;
     bottom: 0;
     width: 100%;
+}
+
+footer a{
+    color: #90caf9;
+}
+
+@media (min-width: 768px) {
+    header, main {
+        max-width: 75%;
+        margin: 0 auto;
+    }
+
+    #langToggle{
+        width: 10%;
+    }
+
+    nav{
+        margin: 0.5vh auto;
+    }
+
+    #tagline {
+        font-size: 1em;
+    }
+
+    h2 {
+        text-align: justify;
+    }
+
+    .project {
+        width: 60%;
+        margin: 1rem auto;
+    }
+
+    #roadmap {
+        width: 50%;
+        margin: 1rem 0;
+    }
 }

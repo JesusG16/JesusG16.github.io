@@ -16,6 +16,25 @@ body {
     font-size: 17px;
 }
 
+body.language-changed h1,
+body.language-changed h2,
+body.language-changed h3,
+body.language-changed p,
+body.language-changed a {
+    animation: flip-in 0.5s forwards;
+}
+
+@keyframes flip-in {
+    from {
+      transform: rotateY(90deg);
+      opacity: 0;
+    }
+    to {
+      transform: rotateY(0);
+      opacity: 1;
+    }
+  }
+
 h1 {
     text-align: center;
     font-size: xxx-large;
@@ -89,7 +108,10 @@ nav ul li a:visited{
 }
 
 #langToggle{
-    width: 12%;
+    height: 60%;
+    width: 10%;
+    border-radius: 50px;
+    align-self: center;
 }
 
 main {

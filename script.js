@@ -5,6 +5,7 @@ const translations = {
         skills: "Skills",
         projects: "Projects",
         journey: "Profesional Path",
+        langToggle: "ES  🇪🇸",
         hi : "Hi, I'm Jesús",
         tagline: "Freelance data scientist, specialized in data visualization",
         github: "Check my GitHub",
@@ -49,6 +50,7 @@ const translations = {
         skills: "Habilidades",
         projects: "Proyectos",
         journey: "Carrera",
+        langToggle: "EN  🇬🇧",
         hi : "Hola, Soy Jesús",
         tagline: "Científico de datos, especializado en visualización de datos",
         github: "Enlace a mi GitHub",
@@ -96,6 +98,10 @@ function toggleLanguage() {
     updateContent();
     document.documentElement.lang = currentLang;
     document.title = translations[currentLang]['title']
+    document.body.classList.add('language-changed');
+    setTimeout(() => {
+        document.body.classList.remove('language-changed');
+    }, 500);
 }
 
 function updateContent() {
